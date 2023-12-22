@@ -1,0 +1,23 @@
+# Configurations H2
+spring.jpa.show-sql=true
+spring.h2.console.enabled=true
+
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.jpa.hibernate.ddl-auto=none
+
+# l'encodage pour data.sql
+spring.datasource.sql-script-encoding=UTF-8
+
+
+# l'URL d'Eureka à laquelle il faut s'enregistrer
+# eureka.client.serviceUrl.defaultZone=http://localhost:9102/eureka/
+
+#Nos configurations
+mes-config-ms.commandes-last = 10 
+
+# Configuration Actuator
+management.endpoints.web.exposure.include=refresh, health, info 
